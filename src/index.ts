@@ -25,6 +25,7 @@ app.use(cors())
 app.use("/api/v1/customer", customerRoutes)
 app.use("/api/v1/item", itemRoutes)
 app.use("/api/v1/auth", authRoutes)
+app.use("/", authRoutes)
 
 mongoose
   .connect(MONGO_URL)
